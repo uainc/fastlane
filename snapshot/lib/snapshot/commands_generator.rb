@@ -29,7 +29,7 @@ module Snapshot
 
       command :run do |c|
         c.syntax = 'fastlane snapshot'
-        c.description = 'Take new screenshots based on the Snapfile.'
+        c.description = '[default] Take new screenshots based on the Snapfile.'
 
         FastlaneCore::CommanderGenerator.new.generate(Snapshot::Options.available_options, command: c)
 

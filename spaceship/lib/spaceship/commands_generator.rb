@@ -29,7 +29,7 @@ module Spaceship
 
       command :playground do |c|
         c.syntax = 'fastlane spaceship playground'
-        c.description = 'Run an interactive shell that connects you to Apple web services'
+        c.description = '[default] Run an interactive shell that connects you to Apple web services'
 
         c.action do |args, options|
           Spaceship::Playground.new(username: options.user).run

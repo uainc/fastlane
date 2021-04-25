@@ -99,7 +99,7 @@ module Fastlane
 
       command :trigger do |c|
         c.syntax = 'fastlane [lane]'
-        c.description = 'Run a specific lane. Pass the lane name and optionally the platform first.'
+        c.description = '[default] Run a specific lane. Pass the lane name and optionally the platform first.'
         c.option('--disable_runner_upgrades', 'Prevents fastlane from attempting to update FastlaneRunner swift project')
         c.option('--swift_server_port INT', 'Set specific port to communicate between fastlane and FastlaneRunner')
 

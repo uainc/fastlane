@@ -32,7 +32,7 @@ module Precheck
 
       command :check_metadata do |c|
         c.syntax = "fastlane precheck"
-        c.description = Precheck::DESCRIPTION
+        c.description = '[default] ' + Precheck::DESCRIPTION
 
         FastlaneCore::CommanderGenerator.new.generate(Precheck::Options.available_options, command: c)
 

@@ -34,7 +34,7 @@ module Scan
 
       command :tests do |c|
         c.syntax = "fastlane scan"
-        c.description = Scan::DESCRIPTION
+        c.description = '[default] ' + Scan::DESCRIPTION
 
         FastlaneCore::CommanderGenerator.new.generate(Scan::Options.available_options, command: c)
 

@@ -57,7 +57,7 @@ module Deliver
 
       command :run do |c|
         c.syntax = 'fastlane deliver'
-        c.description = 'Upload metadata and binary to App Store Connect'
+        c.description = '[default] Upload metadata and binary to App Store Connect'
 
         FastlaneCore::CommanderGenerator.new.generate(deliverfile_options, command: c)
 

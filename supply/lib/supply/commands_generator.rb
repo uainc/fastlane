@@ -28,7 +28,7 @@ module Supply
 
       command :run do |c|
         c.syntax = 'fastlane supply'
-        c.description = 'Run a deploy process'
+        c.description = '[default] Run a deploy process'
 
         FastlaneCore::CommanderGenerator.new.generate(Supply::Options.available_options, command: c)
 

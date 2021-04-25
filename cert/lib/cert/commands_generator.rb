@@ -30,7 +30,7 @@ module Cert
 
       command :create do |c|
         c.syntax = 'fastlane cert create'
-        c.description = 'Create new iOS code signing certificates'
+        c.description = '[default] Create new iOS code signing certificates'
 
         FastlaneCore::CommanderGenerator.new.generate(Cert::Options.available_options, command: c)
 

@@ -30,7 +30,7 @@ module Sigh
 
       command :renew do |c|
         c.syntax = 'fastlane sigh renew'
-        c.description = 'Renews the certificate (in case it expired) and outputs the path to the generated file'
+        c.description = '[default] Renews the certificate (in case it expired) and outputs the path to the generated file'
 
         FastlaneCore::CommanderGenerator.new.generate(Sigh::Options.available_options, command: c)
 

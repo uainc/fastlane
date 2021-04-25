@@ -39,7 +39,7 @@ module Match
 
       command :run do |c|
         c.syntax = 'fastlane match'
-        c.description = Match::DESCRIPTION
+        c.description = '[default] ' + Match::DESCRIPTION
 
         FastlaneCore::CommanderGenerator.new.generate(Match::Options.available_options, command: c)
 
