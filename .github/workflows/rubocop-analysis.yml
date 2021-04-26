@@ -20,7 +20,6 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.6
-     #   ruby-version: 3.0.1
 
     # This step is not necessary if you add the gem to your Gemfile
     - name: Install Code Scanning integration
